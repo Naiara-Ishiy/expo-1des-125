@@ -7,7 +7,7 @@ const styles = StyleSheet.create(
             flex: 1,
             backgroundColor: '#ff0', 
             alignItems: 'center', 
-            justifyContent: 'space-evenly',             
+            // justifyContent: 'space-evenly',             
         }, 
         titulo: {
             fontSize: RFPercentage(5), 
@@ -16,7 +16,27 @@ const styles = StyleSheet.create(
         }, 
         txt: {
             fontSize: RFPercentage(2.5), 
+        }, 
+        botao: {
+            backgroundColor: '#f00',
+            borderRadius: 10, 
+            marginTop: 10
+
         },
+        textoBtn: {
+            padding: RFPercentage(0.8),             
+        },
+        btnVoltar: {
+            // borderWidth: 1,
+            width: '100%',
+            paddingLeft: RFPercentage(1), 
+            alignItems: 'flex-start'
+        },
+        exemplo: {
+            flex: 1, 
+            justifyContent: 'center',
+            alignItems: 'center',
+        }
     }
 );  
 

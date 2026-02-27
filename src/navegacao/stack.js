@@ -1,6 +1,6 @@
-import { createNativeStackNavigator } from '@react-navigation/native-stack'; 
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import ListaExemplos from '../exemplos/listaExemplos'; 
+import ListaExemplos from '../exemplos/listaExemplos';
 import Exemplo01 from '../exemplos/ex01';
 import Exemplo02 from '../exemplos/ex02';
 import Exemplo03 from '../exemplos/ex03';
@@ -15,9 +15,18 @@ const Stack = createNativeStackNavigator();
 
 function RootStack() {
   return (
-    <Stack.Navigator>
-      <Stack.Screen name="Home" component={ListaExemplos} />
-      <Stack.Screen name="Exemplo01" component={Exemplo01} />
+    <Stack.Navigator
+      screenOptions={{
+        headerStyle: { backgroundColor: '#777'},         
+        // headerShown: false,
+      }}                  
+    >
+      <Stack.Screen name="Home" component={ListaExemplos} options={{headerTintColor: '#fff',}} />
+      <Stack.Screen
+        name="Exemplo01"
+        component={Exemplo01}
+        options={{ title: 'Exemplo 1' }}               
+      />
       <Stack.Screen name="Exemplo02" component={Exemplo02} />
       <Stack.Screen name="Exemplo03" component={Exemplo03} />
       <Stack.Screen name="Exemplo04" component={Exemplo04} />
