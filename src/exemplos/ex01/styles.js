@@ -10,7 +10,7 @@ const styles = StyleSheet.create(
             justifyContent: 'space-evenly',
         }, 
         voltar: {
-            width: '100%',
+            width: '100%',//test
             alignItems: 'flex-start',
         },
         titulo: {
