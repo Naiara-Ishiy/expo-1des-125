@@ -14,7 +14,7 @@ import { Background } from '@react-navigation/elements';
 
 const Stack = createNativeStackNavigator();
 
-function stackExemplos() {
+function StackExemplos() {
   return (
     <Stack.Navigator screenOptions={{
       headerStyle: {backgroundColor: 'tomato'},
@@ -38,4 +38,4 @@ function stackExemplos() {
   );
 }
 
-export default stackExemplos;
+export default StackExemplos;
